@@ -13,6 +13,25 @@
 */
 
 class Fecha{
+private:
+    int dia;
+    int mes;
+    int anio;
+public:
+
+    int getDia();
+    int getMes();
+    int getAnio();
+    void setDia(int d);
+    void setMes(int m);
+    void setAnio(int a);
+    Fecha(int d, int m, int a);
+    Fecha();
+    Fecha operator++(int);
+    Fecha operator--(int);
+    Fecha operator+(int d);
+    Fecha operator-(int d);
+    bool operator==(Fecha f) const;
 
 };
 
