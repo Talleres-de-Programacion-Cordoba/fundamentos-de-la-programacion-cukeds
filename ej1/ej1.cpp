@@ -8,6 +8,6 @@
 int ej1() {
     int arr[5] = {1, 2, 3, 4, 5};
     int *first = &arr[0];
-    int *last = &arr[2];
+    int *last = &arr[4];
     return last - first;
 }
