@@ -18,8 +18,8 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Ejercicio 1
-        setup-command: cmake --target test_ej1 -j 6
-        command: test_ej1
+        setup-command: cmake
+        command: make test_ej1
         timeout: 10
         max-score: 50
     - name: Ejercicio 2
@@ -27,8 +27,8 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Ejercicio 2
-        setup-command: cmake --target test_ej2 -j 6
-        command: test_ej2
+        setup-command: cmake
+        command: make test_ej2
         timeout: 10
         max-score: 50
     - name: Autograding Reporter
