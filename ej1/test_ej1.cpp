@@ -6,5 +6,4 @@
 
 TEST_CASE( "1: Difference is correctly calculated", "[multi-file:2]" ) {
     REQUIRE( ej1() == 4);
-
 }
