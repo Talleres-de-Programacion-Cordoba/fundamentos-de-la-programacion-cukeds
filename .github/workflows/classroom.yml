@@ -18,7 +18,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Ejercicio 1
-        setup-command: cmake ..
+        setup-command: cd build && cmake ..
         command: cmake --build . --target run_test_ej1
         timeout: 10
         max-score: 50
@@ -27,7 +27,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Ejercicio 2
-        setup-command: cmake ..
+        setup-command: cd build && cmake ..
         command: cmake --build . --target run_test_ej1
         timeout: 10
         max-score: 50
