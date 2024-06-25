@@ -19,7 +19,7 @@ jobs:
       with:
         test-name: Ejercicio 1
         setup-command: cd build && cmake ..
-        command: cmake --build . --target run_test_ej1
+        command: cd build && cmake --build . --target run_test_ej1
         timeout: 10
         max-score: 50
     - name: Ejercicio 2
@@ -28,7 +28,7 @@ jobs:
       with:
         test-name: Ejercicio 2
         setup-command: cd build && cmake ..
-        command: cmake --build . --target run_test_ej1
+        command: cd build && cmake --build . --target run_test_ej1
         timeout: 10
         max-score: 50
     - name: Autograding Reporter
